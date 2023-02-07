@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -10,30 +12,24 @@ header {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  margin: 15px;
   border: 2.5px solid black;
-  padding: 10px;
+  padding: 25px 50px;
   background-color: grey;
 }
 
 header img {
-  width: 15%;
+  width: 25%;
   height: auto;
   object-fit: contain;
   margin-right: 20px;
   padding: 5px;
 }
 
-@media only screen and (max-width: 767px) {
-  header img {
-    width: 75%;
-  }
-}
-
 .name {
   display: flex;
   justify-content: center;
   border: 2.5px solid black;
+  padding: 5px;
 }
 
 .menu {
@@ -46,18 +42,22 @@ header img {
 .menu-header {
   font-size: 24px;
   font-weight: bold;
-  margin-right: 50px;
-  border: 2.5px solid black;
-  padding: 10px;
+  margin: 50px;
+  border: 2.5px solid white;
+  border-radius: 10px;
+  padding: 15px;
   text-align: center;
+  text-decoration: none;
+  color: red;
 }
 
 .menu-header:hover {
-  background-color: blue;
+  background-color: white;
   transition: 0.5s;
 }
 
 .content {
+  color: white;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -77,28 +77,9 @@ input[type="text"] {
 input[type="submit"] {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
-}
-
-@media (max-width: 500px) {
-  header {
-      font-size: 22px;
-      width: 100%;
-  }
-  
-  .menu {
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-  
-  .menu-header {
-      margin-right: 0;
-      width: 100%;
-      margin-bottom: 10px;
-  }
 }
 
 .text-container {
@@ -116,17 +97,50 @@ textarea {
   resize: none;
 }
 
-@media (max-width: 767px) {
-  textarea {
-    width: 100%;
-  }
-}
-
 input[type="submit"] {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  header img {
+    width: 75%;
+  }
+  
+  header {
+    font-size: 22px;
+  }
+  
+  .menu {
+    flex-wrap: wrap;
+  } 
+}
+
+.soul {
+  background-color: red;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.soul:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+
+.paypal {
+  background-color: blue;
+  color: gold;
+  padding: 10px;
+  border-radius: 25px;
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+.paypal:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+

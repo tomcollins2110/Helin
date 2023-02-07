@@ -4,6 +4,17 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  margin: 50px;
+}
+
 header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
@@ -25,7 +36,7 @@ header img {
   height: auto;
   object-fit: contain;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   animation-name: hero-zoom;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -34,24 +45,25 @@ header img {
 .name {
   display: flex;
   justify-content: center;
-  border: 2.5px solid black;
-  padding: 5px;
+  color: white;
+  border: 2.5px solid white;
+  padding: 10px;
 }
 
 .menu {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .menu-header {
   font-size: 24px;
   font-weight: bold;
-  margin: 50px;
+  margin: 15px;
   border: 2.5px solid white;
   border-radius: 10px;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   color: red;
@@ -65,19 +77,19 @@ header img {
 .content {
   color: white;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 select {
   padding: 10px 20px;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 input[type="text"] {
   padding: 10px 20px;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 input[type="submit"] {
@@ -99,16 +111,8 @@ textarea {
   padding: 10px 20px;
   font-size: 18px;
   width: 80%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   resize: none;
-}
-
-input[type="submit"] {
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -127,8 +131,11 @@ input[type="submit"] {
 
 .soul {
   background-color: red;
-  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
   margin: 15px;
+  font-size: 1.5em;
 }
 
 .soul:hover {
@@ -148,5 +155,11 @@ input[type="submit"] {
 .paypal:hover {
   background-color: white;
   transition: 0.5s;
+}
+
+.email {
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
